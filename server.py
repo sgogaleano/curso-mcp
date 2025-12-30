@@ -30,10 +30,13 @@ def multiply(a: float, b: float) -> float:
 def divide(a: float, b: float) -> float:
     """
     Divide dos números y devuelve el resultado.
-    
+
     Error:
         ValueError: Si b es cero, se lanza un error de división por cero.
     """
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+if __name__ == "__main__":
+    mcp.run()
